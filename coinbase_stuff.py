@@ -40,7 +40,7 @@ class prices_obj():
   def get_json(self):
     xjson = ''
     if self.filepath == None:
-      with open('D://prog/python/data/14dayeth') as json_file:
+      with open('data/14dayeth') as json_file:
         xjson = json.load(json_file)
     else:
       with open(self.filepath) as json_file:
